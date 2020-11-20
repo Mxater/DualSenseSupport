@@ -1,6 +1,6 @@
 
 # DualSenseSupport
-Preliminar support for DualSense
+Preliminar support for DualSense Haptic
 
 ![Tester interface](https://i.imgur.com/hp0sGZO.png)
 
