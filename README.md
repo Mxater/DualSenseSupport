@@ -18,3 +18,6 @@ Only works with USB in this moment.
 
 # Download
 [Main Page for Download Build](https://github.com/Mxater/DualSenseSupport/releases)
+
+# Social
+[Discord](https://discord.gg/UPCg9VK4gQ)
