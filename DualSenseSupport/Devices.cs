@@ -26,7 +26,7 @@ namespace DualSenseSupport
             WindowsUsbDeviceFactory.Register(_logger, _tracer);
 
             SearchDS5Controller();
-            SearchXboxController();
+            // SearchXboxController();
         }
 
         public static int GetDeviceCount()

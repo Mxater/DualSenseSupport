@@ -89,9 +89,16 @@ namespace DualSenseSupport
                 var outputReport = new byte[(int) Connection.WriteBufferSize];
 
                 outputReport[0] = 0x02; //REPORT TYPE
-                outputReport[1] = 0x4 | 0x8; //CONTROL FLAGS
-                outputReport[1] = 0xFF; //CONTROL FLAGS
-                outputReport[2] = 0x1 | 0x2 | 0x4 | 0x10 | 0x40; //Control flags
+                outputReport[1] = 0x4 | 0x8 ; //CONTROL FLAGS
+                // outputReport[1] = 0x4 | 0x8 | 0x10 | 0x20 | 0x40; //CONTROL FLAGS
+                // outputReport[1] = 0x00; //CONTROL FLAGS
+                outputReport[2] = 0x1 | 0x4 | 0x10 | 0x40; //Control flags
+                // outputReport[2] = 0x1 | 0x4 | 0x10 | 0x40; //Control flags
+                
+                
+                //AUDIO TESTING
+                // outputReport[5]  = 0x00; // audio volume of connected headphones (maxes out at about 0x7f)
+                
                 outputReport[39] = (byte) _dsLight.LedOption; //LED CONTROL
 
                 outputReport[44] = (byte) _dsLight.PlayerNumber;

@@ -83,6 +83,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackG)).BeginInit();
@@ -107,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize) (this.r_v_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // ComboIndex
@@ -281,6 +283,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.numericUpDown1);
             this.tabPage1.Controls.Add(this.l_l_7);
             this.tabPage1.Controls.Add(this.l_l_6);
             this.tabPage1.Controls.Add(this.l_l_5);
@@ -618,6 +621,13 @@
             this.trackBar3.TabIndex = 18;
             this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(613, 56);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(42, 20);
+            this.numericUpDown1.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -673,6 +683,7 @@
             ((System.ComponentModel.ISupportInitialize) (this.r_v_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
@@ -707,6 +718,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelPlayerNumber;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label r_l_1;
         private System.Windows.Forms.Label r_l_2;
