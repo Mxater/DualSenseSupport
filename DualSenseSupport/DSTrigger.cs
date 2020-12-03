@@ -13,6 +13,7 @@ namespace DSProject
             Pulse_A = 0x2 | 0x20,
             Pulse_B = 0x2 | 0x04,
             Pulse_AB = 0x2 | 0x20 | 0x04,
+            GameCube = -1,
             Calibration= 0xFC
         }
 

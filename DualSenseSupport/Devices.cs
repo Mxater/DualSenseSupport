@@ -18,6 +18,7 @@ namespace DualSenseSupport
         
         
         private static List<DeviceInfo> devicesList= new List<DeviceInfo>();
+        private static List<DeviceInfoXbox> devicesListXbox= new List<DeviceInfoXbox>();
         
         public static void Init()
         {
@@ -25,6 +26,7 @@ namespace DualSenseSupport
             WindowsUsbDeviceFactory.Register(_logger, _tracer);
 
             SearchDS5Controller();
+            SearchXboxController();
         }
 
         public static int GetDeviceCount()
@@ -38,7 +40,7 @@ namespace DualSenseSupport
         } 
         
 
-        public static IEnumerable<DeviceInfo> EnumerateDevices()
+        public static Tuple<IEnumerable<DeviceInfo>,IEnumerable<DeviceInfoXbox>> EnumerateDevices()
         {
             IEnumerable<ConnectedDeviceDefinition> devicesList = new List<ConnectedDeviceDefinition>();
             var thread = new Thread(o =>
@@ -53,9 +55,10 @@ namespace DualSenseSupport
             
             // devicesList = task.Result;
             var devices = new List<DeviceInfo>();
+            var devicesXbox = new List<DeviceInfoXbox>();
             foreach (var deviceDefinition in devicesList)
             {
-                if (deviceDefinition.VendorId == 1356)
+                if (deviceDefinition.VendorId == 1356 && deviceDefinition.ProductId==3302)
                 {
                     var device = new DeviceInfo
                     {
@@ -77,16 +80,27 @@ namespace DualSenseSupport
                     }
                     devices.Add(device);
                 }
+
+                if (deviceDefinition.VendorId == 1118 && deviceDefinition.ProductId == 654)
+                {
+                    var device = new DeviceInfoXbox()
+                    {
+                        Connection = deviceDefinition,
+                        Device = DeviceManager.Current.GetDevice(deviceDefinition),
+                        Uid= Guid.NewGuid().ToString()
+                    };
+                    devicesXbox.Add(device);
+                }
             }
 
 
 
-            return devices;
+            return new Tuple<IEnumerable<DeviceInfo>, IEnumerable<DeviceInfoXbox>>(devices,devicesXbox);
         }
 
         public static void SearchDS5Controller()
         {
-            var devices=EnumerateDevices();
+            var devices=EnumerateDevices().Item1;
             foreach (var deviceInfo in devicesList.Where(deviceInfo => deviceInfo.Device.IsInitialized))
             {
                 deviceInfo.Close();
@@ -97,7 +111,20 @@ namespace DualSenseSupport
                 devicesList.Add(deviceInfo);
                 deviceInfo.Init();
             }
-            
+        }
+        public static void SearchXboxController()
+        {
+            var devices=EnumerateDevices().Item2;
+            foreach (var deviceInfo in devicesListXbox.Where(deviceInfo => deviceInfo.Device.IsInitialized))
+            {
+                deviceInfo.Close();
+            }
+
+            foreach (var deviceInfo in devices)
+            {
+                devicesListXbox.Add(deviceInfo);
+                deviceInfo.Init();
+            }
         }
 
 

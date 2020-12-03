@@ -88,6 +88,7 @@
         <Compile Include="Class1.cs" />
         <Compile Include="Colors.cs" />
         <Compile Include="DeviceInfo.cs" />
+        <Compile Include="DeviceInfoXbox.cs" />
         <Compile Include="Devices.cs" />
         <Compile Include="DSLight.cs" />
         <Compile Include="DSTrigger.cs" />

@@ -122,6 +122,20 @@ namespace DualSenseSupport
                 outputReport[20] =
                     (byte) _dsTriggerRight
                         .Force7; // effect actuation frequency in Hz (requires supplement modes 4 and 20)
+
+                if (_dsTriggerRight.Mode == DsTrigger.Modes.GameCube)
+                {
+                    outputReport[11] = (byte) DsTrigger.Modes.Pulse; //Mode Motor Right
+                    outputReport[12] = 0x90; //right trigger start of resistance section
+                    outputReport[13] = 0xA0; //right trigger (mode1) amount of force exerted (mode2) end of resistance section supplemental mode 4+20) flag(s?) 0x02 = do not pause effect when fully presse
+                    outputReport[14] = 0xFF; //right trigger force exerted in range (mode2)
+                    outputReport[15] = 0x0; // strength of effect near release state (requires supplement modes 4 and 20)
+                    outputReport[16] = 0x0; // strength of effect near middle (requires supplement modes 4 and 20)
+                    outputReport[17] = 0x0; // strength of effect at pressed state (requires supplement modes 4 and 20)
+                    outputReport[20] = 0x0; // effect actuation frequency in Hz (requires supplement modes 4 and 20)
+                }
+                
+                
                 outputReport[22] = (byte) _dsTriggerLeft.Mode; //Mode Motor Left
                 outputReport[23] = (byte) _dsTriggerLeft.Force1; //right Left start of resistance section
                 outputReport[24] =
@@ -139,6 +153,18 @@ namespace DualSenseSupport
                 outputReport[31] =
                     (byte) _dsTriggerLeft
                         .Force7; // effect actuation frequency in Hz (requires supplement modes 4 and 20)
+                
+                if (_dsTriggerLeft.Mode == DsTrigger.Modes.GameCube)
+                {
+                    outputReport[22] = (byte) DsTrigger.Modes.Pulse; //Mode Motor Right
+                    outputReport[23] = 0x90; //right trigger start of resistance section
+                    outputReport[24] = 0xA0; //right trigger (mode1) amount of force exerted (mode2) end of resistance section supplemental mode 4+20) flag(s?) 0x02 = do not pause effect when fully presse
+                    outputReport[25] = 0xFF; //right trigger force exerted in range (mode2)
+                    outputReport[26] = 0x0; // strength of effect near release state (requires supplement modes 4 and 20)
+                    outputReport[27] = 0x0; // strength of effect near middle (requires supplement modes 4 and 20)
+                    outputReport[28] = 0x0; // strength of effect at pressed state (requires supplement modes 4 and 20)
+                    outputReport[31] = 0x0; // effect actuation frequency in Hz (requires supplement modes 4 and 20)
+                }
 
                 outputReport[37] = (byte) OveralMotors;
 

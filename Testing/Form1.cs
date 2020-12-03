@@ -51,6 +51,7 @@ namespace Testing
             listModes.Add(new {Text="Pulse + Extra1 ",Value=DsTrigger.Modes.Pulse_A});
             listModes.Add(new {Text="Pulse + Extra2 ",Value=DsTrigger.Modes.Pulse_B});
             listModes.Add(new {Text="Pulse + Extra1 + Extra 2 ",Value=DsTrigger.Modes.Pulse_AB});
+            listModes.Add(new {Text="GameCube ",Value=DsTrigger.Modes.GameCube});
             listModes.Add(new {Text="Calibration ",Value=DsTrigger.Modes.Calibration});
             var listModes2= new List<object>();
             listModes2.Add(new {Text="Off",Value=DsTrigger.Modes.Off});
@@ -62,6 +63,7 @@ namespace Testing
             listModes2.Add(new {Text="Pulse + Extra1 ",Value=DsTrigger.Modes.Pulse_A});
             listModes2.Add(new {Text="Pulse + Extra2 ",Value=DsTrigger.Modes.Pulse_B});
             listModes2.Add(new {Text="Pulse + Extra1 + Extra 2 ",Value=DsTrigger.Modes.Pulse_AB});
+            listModes2.Add(new {Text="GameCube ",Value=DsTrigger.Modes.GameCube});
             listModes2.Add(new {Text="Calibration ",Value=DsTrigger.Modes.Calibration});
             comboLeftMode.DisplayMember = "Text";
             comboLeftMode.ValueMember = "Value";
