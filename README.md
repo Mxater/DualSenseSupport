@@ -21,5 +21,7 @@ Only works with USB in this moment.
 
 # Social
 [Discord](https://discord.gg/UPCg9VK4gQ)
+
 [Patreon](https://www.patreon.com/mxater)
+
 [Payme](https://paypal.me/mxater)
