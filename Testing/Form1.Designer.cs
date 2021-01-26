@@ -50,13 +50,13 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.l_l_7 = new System.Windows.Forms.Label();
-            this.l_l_6 = new System.Windows.Forms.Label();
-            this.l_l_5 = new System.Windows.Forms.Label();
-            this.l_l_4 = new System.Windows.Forms.Label();
-            this.l_l_3 = new System.Windows.Forms.Label();
-            this.l_l_2 = new System.Windows.Forms.Label();
-            this.l_l_1 = new System.Windows.Forms.Label();
+            this.l_n_7 = new System.Windows.Forms.NumericUpDown();
+            this.l_n_6 = new System.Windows.Forms.NumericUpDown();
+            this.l_n_5 = new System.Windows.Forms.NumericUpDown();
+            this.l_n_4 = new System.Windows.Forms.NumericUpDown();
+            this.l_n_3 = new System.Windows.Forms.NumericUpDown();
+            this.l_n_2 = new System.Windows.Forms.NumericUpDown();
+            this.l_n_1 = new System.Windows.Forms.NumericUpDown();
             this.l_v_7 = new System.Windows.Forms.TrackBar();
             this.l_v_6 = new System.Windows.Forms.TrackBar();
             this.l_v_5 = new System.Windows.Forms.TrackBar();
@@ -65,13 +65,13 @@
             this.l_v_2 = new System.Windows.Forms.TrackBar();
             this.l_v_1 = new System.Windows.Forms.TrackBar();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.r_l_7 = new System.Windows.Forms.Label();
-            this.r_l_6 = new System.Windows.Forms.Label();
-            this.r_l_5 = new System.Windows.Forms.Label();
-            this.r_l_4 = new System.Windows.Forms.Label();
-            this.r_l_3 = new System.Windows.Forms.Label();
-            this.r_l_2 = new System.Windows.Forms.Label();
-            this.r_l_1 = new System.Windows.Forms.Label();
+            this.r_n_7 = new System.Windows.Forms.NumericUpDown();
+            this.r_n_6 = new System.Windows.Forms.NumericUpDown();
+            this.r_n_5 = new System.Windows.Forms.NumericUpDown();
+            this.r_n_4 = new System.Windows.Forms.NumericUpDown();
+            this.r_n_3 = new System.Windows.Forms.NumericUpDown();
+            this.r_n_2 = new System.Windows.Forms.NumericUpDown();
+            this.r_n_1 = new System.Windows.Forms.NumericUpDown();
             this.r_v_7 = new System.Windows.Forms.TrackBar();
             this.r_v_6 = new System.Windows.Forms.TrackBar();
             this.r_v_5 = new System.Windows.Forms.TrackBar();
@@ -83,7 +83,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackG)).BeginInit();
@@ -92,6 +91,13 @@
             ((System.ComponentModel.ISupportInitialize) (this.trackBar2)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.l_v_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.l_v_6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.l_v_5)).BeginInit();
@@ -100,6 +106,13 @@
             ((System.ComponentModel.ISupportInitialize) (this.l_v_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.l_v_1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_5)).BeginInit();
@@ -108,7 +121,6 @@
             ((System.ComponentModel.ISupportInitialize) (this.r_v_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // ComboIndex
@@ -153,7 +165,7 @@
             this.trackR.Name = "trackR";
             this.trackR.Size = new System.Drawing.Size(104, 45);
             this.trackR.TabIndex = 4;
-            this.trackR.Scroll += new System.EventHandler(this.trackR_Scroll);
+            this.trackR.ValueChanged += new System.EventHandler(this.trackR_Scroll);
             // 
             // trackG
             // 
@@ -162,7 +174,7 @@
             this.trackG.Name = "trackG";
             this.trackG.Size = new System.Drawing.Size(104, 45);
             this.trackG.TabIndex = 5;
-            this.trackG.Scroll += new System.EventHandler(this.trackG_Scroll);
+            this.trackG.ValueChanged += new System.EventHandler(this.trackG_Scroll);
             // 
             // trackB
             // 
@@ -171,7 +183,7 @@
             this.trackB.Name = "trackB";
             this.trackB.Size = new System.Drawing.Size(104, 45);
             this.trackB.TabIndex = 6;
-            this.trackB.Scroll += new System.EventHandler(this.trackB_Scroll);
+            this.trackB.ValueChanged += new System.EventHandler(this.trackB_Scroll);
             // 
             // label6
             // 
@@ -283,14 +295,13 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.numericUpDown1);
-            this.tabPage1.Controls.Add(this.l_l_7);
-            this.tabPage1.Controls.Add(this.l_l_6);
-            this.tabPage1.Controls.Add(this.l_l_5);
-            this.tabPage1.Controls.Add(this.l_l_4);
-            this.tabPage1.Controls.Add(this.l_l_3);
-            this.tabPage1.Controls.Add(this.l_l_2);
-            this.tabPage1.Controls.Add(this.l_l_1);
+            this.tabPage1.Controls.Add(this.l_n_7);
+            this.tabPage1.Controls.Add(this.l_n_6);
+            this.tabPage1.Controls.Add(this.l_n_5);
+            this.tabPage1.Controls.Add(this.l_n_4);
+            this.tabPage1.Controls.Add(this.l_n_3);
+            this.tabPage1.Controls.Add(this.l_n_2);
+            this.tabPage1.Controls.Add(this.l_n_1);
             this.tabPage1.Controls.Add(this.l_v_7);
             this.tabPage1.Controls.Add(this.l_v_6);
             this.tabPage1.Controls.Add(this.l_v_5);
@@ -308,61 +319,68 @@
             this.tabPage1.Text = "Left Trigger";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // l_l_7
+            // l_n_7
             // 
-            this.l_l_7.Location = new System.Drawing.Point(527, 3);
-            this.l_l_7.Name = "l_l_7";
-            this.l_l_7.Size = new System.Drawing.Size(49, 23);
-            this.l_l_7.TabIndex = 15;
-            this.l_l_7.Text = "label13";
+            this.l_n_7.Location = new System.Drawing.Point(531, 3);
+            this.l_n_7.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.l_n_7.Name = "l_n_7";
+            this.l_n_7.Size = new System.Drawing.Size(45, 20);
+            this.l_n_7.TabIndex = 22;
+            this.l_n_7.ValueChanged += new System.EventHandler(this.l_n_7_ValueChanged);
             // 
-            // l_l_6
+            // l_n_6
             // 
-            this.l_l_6.Location = new System.Drawing.Point(476, 3);
-            this.l_l_6.Name = "l_l_6";
-            this.l_l_6.Size = new System.Drawing.Size(49, 23);
-            this.l_l_6.TabIndex = 14;
-            this.l_l_6.Text = "label12";
+            this.l_n_6.Location = new System.Drawing.Point(480, 3);
+            this.l_n_6.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.l_n_6.Name = "l_n_6";
+            this.l_n_6.Size = new System.Drawing.Size(45, 20);
+            this.l_n_6.TabIndex = 21;
+            this.l_n_6.ValueChanged += new System.EventHandler(this.l_n_6_ValueChanged);
             // 
-            // l_l_5
+            // l_n_5
             // 
-            this.l_l_5.Location = new System.Drawing.Point(425, 3);
-            this.l_l_5.Name = "l_l_5";
-            this.l_l_5.Size = new System.Drawing.Size(49, 23);
-            this.l_l_5.TabIndex = 13;
-            this.l_l_5.Text = "label11";
+            this.l_n_5.Location = new System.Drawing.Point(429, 3);
+            this.l_n_5.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.l_n_5.Name = "l_n_5";
+            this.l_n_5.Size = new System.Drawing.Size(45, 20);
+            this.l_n_5.TabIndex = 20;
+            this.l_n_5.ValueChanged += new System.EventHandler(this.l_n_5_ValueChanged);
             // 
-            // l_l_4
+            // l_n_4
             // 
-            this.l_l_4.Location = new System.Drawing.Point(374, 3);
-            this.l_l_4.Name = "l_l_4";
-            this.l_l_4.Size = new System.Drawing.Size(49, 23);
-            this.l_l_4.TabIndex = 12;
-            this.l_l_4.Text = "label10";
+            this.l_n_4.Location = new System.Drawing.Point(378, 3);
+            this.l_n_4.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.l_n_4.Name = "l_n_4";
+            this.l_n_4.Size = new System.Drawing.Size(45, 20);
+            this.l_n_4.TabIndex = 19;
+            this.l_n_4.ValueChanged += new System.EventHandler(this.l_n_4_ValueChanged);
             // 
-            // l_l_3
+            // l_n_3
             // 
-            this.l_l_3.Location = new System.Drawing.Point(326, 3);
-            this.l_l_3.Name = "l_l_3";
-            this.l_l_3.Size = new System.Drawing.Size(49, 23);
-            this.l_l_3.TabIndex = 11;
-            this.l_l_3.Text = "label9";
+            this.l_n_3.Location = new System.Drawing.Point(327, 3);
+            this.l_n_3.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.l_n_3.Name = "l_n_3";
+            this.l_n_3.Size = new System.Drawing.Size(45, 20);
+            this.l_n_3.TabIndex = 18;
+            this.l_n_3.ValueChanged += new System.EventHandler(this.l_n_3_ValueChanged);
             // 
-            // l_l_2
+            // l_n_2
             // 
-            this.l_l_2.Location = new System.Drawing.Point(272, 3);
-            this.l_l_2.Name = "l_l_2";
-            this.l_l_2.Size = new System.Drawing.Size(49, 23);
-            this.l_l_2.TabIndex = 10;
-            this.l_l_2.Text = "label8";
+            this.l_n_2.Location = new System.Drawing.Point(276, 3);
+            this.l_n_2.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.l_n_2.Name = "l_n_2";
+            this.l_n_2.Size = new System.Drawing.Size(45, 20);
+            this.l_n_2.TabIndex = 17;
+            this.l_n_2.ValueChanged += new System.EventHandler(this.l_n_2_ValueChanged);
             // 
-            // l_l_1
+            // l_n_1
             // 
-            this.l_l_1.Location = new System.Drawing.Point(221, 3);
-            this.l_l_1.Name = "l_l_1";
-            this.l_l_1.Size = new System.Drawing.Size(49, 23);
-            this.l_l_1.TabIndex = 9;
-            this.l_l_1.Text = "label7";
+            this.l_n_1.Location = new System.Drawing.Point(225, 3);
+            this.l_n_1.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.l_n_1.Name = "l_n_1";
+            this.l_n_1.Size = new System.Drawing.Size(45, 20);
+            this.l_n_1.TabIndex = 16;
+            this.l_n_1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // l_v_7
             // 
@@ -372,7 +390,7 @@
             this.l_v_7.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.l_v_7.Size = new System.Drawing.Size(45, 230);
             this.l_v_7.TabIndex = 8;
-            this.l_v_7.Scroll += new System.EventHandler(this.l_v_7_Scroll);
+            this.l_v_7.ValueChanged += new System.EventHandler(this.l_v_7_Scroll);
             // 
             // l_v_6
             // 
@@ -382,7 +400,7 @@
             this.l_v_6.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.l_v_6.Size = new System.Drawing.Size(45, 230);
             this.l_v_6.TabIndex = 7;
-            this.l_v_6.Scroll += new System.EventHandler(this.l_v_6_Scroll);
+            this.l_v_6.ValueChanged += new System.EventHandler(this.l_v_6_Scroll);
             // 
             // l_v_5
             // 
@@ -392,7 +410,7 @@
             this.l_v_5.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.l_v_5.Size = new System.Drawing.Size(45, 230);
             this.l_v_5.TabIndex = 6;
-            this.l_v_5.Scroll += new System.EventHandler(this.l_v_5_Scroll);
+            this.l_v_5.ValueChanged += new System.EventHandler(this.l_v_5_Scroll);
             // 
             // l_v_4
             // 
@@ -402,7 +420,7 @@
             this.l_v_4.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.l_v_4.Size = new System.Drawing.Size(45, 230);
             this.l_v_4.TabIndex = 5;
-            this.l_v_4.Scroll += new System.EventHandler(this.l_v_4_Scroll);
+            this.l_v_4.ValueChanged += new System.EventHandler(this.l_v_4_Scroll);
             // 
             // l_v_3
             // 
@@ -412,7 +430,7 @@
             this.l_v_3.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.l_v_3.Size = new System.Drawing.Size(45, 230);
             this.l_v_3.TabIndex = 4;
-            this.l_v_3.Scroll += new System.EventHandler(this.l_v_3_Scroll);
+            this.l_v_3.ValueChanged += new System.EventHandler(this.l_v_3_Scroll);
             // 
             // l_v_2
             // 
@@ -422,7 +440,7 @@
             this.l_v_2.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.l_v_2.Size = new System.Drawing.Size(45, 230);
             this.l_v_2.TabIndex = 3;
-            this.l_v_2.Scroll += new System.EventHandler(this.l_v_2_Scroll);
+            this.l_v_2.ValueChanged += new System.EventHandler(this.l_v_2_Scroll);
             // 
             // l_v_1
             // 
@@ -432,17 +450,17 @@
             this.l_v_1.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.l_v_1.Size = new System.Drawing.Size(45, 230);
             this.l_v_1.TabIndex = 2;
-            this.l_v_1.Scroll += new System.EventHandler(this.l_v_1_Scroll);
+            this.l_v_1.ValueChanged += new System.EventHandler(this.l_v_1_Scroll);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.r_l_7);
-            this.tabPage2.Controls.Add(this.r_l_6);
-            this.tabPage2.Controls.Add(this.r_l_5);
-            this.tabPage2.Controls.Add(this.r_l_4);
-            this.tabPage2.Controls.Add(this.r_l_3);
-            this.tabPage2.Controls.Add(this.r_l_2);
-            this.tabPage2.Controls.Add(this.r_l_1);
+            this.tabPage2.Controls.Add(this.r_n_7);
+            this.tabPage2.Controls.Add(this.r_n_6);
+            this.tabPage2.Controls.Add(this.r_n_5);
+            this.tabPage2.Controls.Add(this.r_n_4);
+            this.tabPage2.Controls.Add(this.r_n_3);
+            this.tabPage2.Controls.Add(this.r_n_2);
+            this.tabPage2.Controls.Add(this.r_n_1);
             this.tabPage2.Controls.Add(this.r_v_7);
             this.tabPage2.Controls.Add(this.r_v_6);
             this.tabPage2.Controls.Add(this.r_v_5);
@@ -460,61 +478,68 @@
             this.tabPage2.Text = "Rigth Trigger";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // r_l_7
+            // r_n_7
             // 
-            this.r_l_7.Location = new System.Drawing.Point(524, 3);
-            this.r_l_7.Name = "r_l_7";
-            this.r_l_7.Size = new System.Drawing.Size(49, 23);
-            this.r_l_7.TabIndex = 31;
-            this.r_l_7.Text = "label13";
+            this.r_n_7.Location = new System.Drawing.Point(528, 3);
+            this.r_n_7.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.r_n_7.Name = "r_n_7";
+            this.r_n_7.Size = new System.Drawing.Size(45, 20);
+            this.r_n_7.TabIndex = 31;
+            this.r_n_7.ValueChanged += new System.EventHandler(this.numericUpDown7_ValueChanged);
             // 
-            // r_l_6
+            // r_n_6
             // 
-            this.r_l_6.Location = new System.Drawing.Point(473, 3);
-            this.r_l_6.Name = "r_l_6";
-            this.r_l_6.Size = new System.Drawing.Size(49, 23);
-            this.r_l_6.TabIndex = 30;
-            this.r_l_6.Text = "label12";
+            this.r_n_6.Location = new System.Drawing.Point(477, 3);
+            this.r_n_6.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.r_n_6.Name = "r_n_6";
+            this.r_n_6.Size = new System.Drawing.Size(45, 20);
+            this.r_n_6.TabIndex = 30;
+            this.r_n_6.ValueChanged += new System.EventHandler(this.numericUpDown6_ValueChanged);
             // 
-            // r_l_5
+            // r_n_5
             // 
-            this.r_l_5.Location = new System.Drawing.Point(422, 3);
-            this.r_l_5.Name = "r_l_5";
-            this.r_l_5.Size = new System.Drawing.Size(49, 23);
-            this.r_l_5.TabIndex = 29;
-            this.r_l_5.Text = "label11";
+            this.r_n_5.Location = new System.Drawing.Point(426, 3);
+            this.r_n_5.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.r_n_5.Name = "r_n_5";
+            this.r_n_5.Size = new System.Drawing.Size(45, 20);
+            this.r_n_5.TabIndex = 29;
+            this.r_n_5.ValueChanged += new System.EventHandler(this.numericUpDown5_ValueChanged);
             // 
-            // r_l_4
+            // r_n_4
             // 
-            this.r_l_4.Location = new System.Drawing.Point(371, 3);
-            this.r_l_4.Name = "r_l_4";
-            this.r_l_4.Size = new System.Drawing.Size(49, 23);
-            this.r_l_4.TabIndex = 28;
-            this.r_l_4.Text = "label10";
+            this.r_n_4.Location = new System.Drawing.Point(375, 3);
+            this.r_n_4.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.r_n_4.Name = "r_n_4";
+            this.r_n_4.Size = new System.Drawing.Size(45, 20);
+            this.r_n_4.TabIndex = 28;
+            this.r_n_4.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
             // 
-            // r_l_3
+            // r_n_3
             // 
-            this.r_l_3.Location = new System.Drawing.Point(323, 3);
-            this.r_l_3.Name = "r_l_3";
-            this.r_l_3.Size = new System.Drawing.Size(49, 23);
-            this.r_l_3.TabIndex = 27;
-            this.r_l_3.Text = "label9";
+            this.r_n_3.Location = new System.Drawing.Point(324, 3);
+            this.r_n_3.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.r_n_3.Name = "r_n_3";
+            this.r_n_3.Size = new System.Drawing.Size(45, 20);
+            this.r_n_3.TabIndex = 27;
+            this.r_n_3.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
             // 
-            // r_l_2
+            // r_n_2
             // 
-            this.r_l_2.Location = new System.Drawing.Point(269, 3);
-            this.r_l_2.Name = "r_l_2";
-            this.r_l_2.Size = new System.Drawing.Size(49, 23);
-            this.r_l_2.TabIndex = 26;
-            this.r_l_2.Text = "label8";
+            this.r_n_2.Location = new System.Drawing.Point(273, 3);
+            this.r_n_2.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.r_n_2.Name = "r_n_2";
+            this.r_n_2.Size = new System.Drawing.Size(45, 20);
+            this.r_n_2.TabIndex = 26;
+            this.r_n_2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
-            // r_l_1
+            // r_n_1
             // 
-            this.r_l_1.Location = new System.Drawing.Point(218, 3);
-            this.r_l_1.Name = "r_l_1";
-            this.r_l_1.Size = new System.Drawing.Size(49, 23);
-            this.r_l_1.TabIndex = 25;
-            this.r_l_1.Text = "label7";
+            this.r_n_1.Location = new System.Drawing.Point(222, 3);
+            this.r_n_1.Maximum = new decimal(new int[] {255, 0, 0, 0});
+            this.r_n_1.Name = "r_n_1";
+            this.r_n_1.Size = new System.Drawing.Size(45, 20);
+            this.r_n_1.TabIndex = 25;
+            this.r_n_1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged_1);
             // 
             // r_v_7
             // 
@@ -524,7 +549,7 @@
             this.r_v_7.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.r_v_7.Size = new System.Drawing.Size(45, 230);
             this.r_v_7.TabIndex = 24;
-            this.r_v_7.Scroll += new System.EventHandler(this.r_v_7_Scroll);
+            this.r_v_7.ValueChanged += new System.EventHandler(this.r_v_7_Scroll);
             // 
             // r_v_6
             // 
@@ -534,7 +559,7 @@
             this.r_v_6.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.r_v_6.Size = new System.Drawing.Size(45, 230);
             this.r_v_6.TabIndex = 23;
-            this.r_v_6.Scroll += new System.EventHandler(this.r_v_6_Scroll);
+            this.r_v_6.ValueChanged += new System.EventHandler(this.r_v_6_Scroll);
             // 
             // r_v_5
             // 
@@ -544,7 +569,7 @@
             this.r_v_5.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.r_v_5.Size = new System.Drawing.Size(45, 230);
             this.r_v_5.TabIndex = 22;
-            this.r_v_5.Scroll += new System.EventHandler(this.r_v_5_Scroll);
+            this.r_v_5.ValueChanged += new System.EventHandler(this.r_v_5_Scroll);
             // 
             // r_v_4
             // 
@@ -554,7 +579,7 @@
             this.r_v_4.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.r_v_4.Size = new System.Drawing.Size(45, 230);
             this.r_v_4.TabIndex = 21;
-            this.r_v_4.Scroll += new System.EventHandler(this.r_v_4_Scroll);
+            this.r_v_4.ValueChanged += new System.EventHandler(this.r_v_4_Scroll);
             // 
             // r_v_3
             // 
@@ -564,7 +589,7 @@
             this.r_v_3.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.r_v_3.Size = new System.Drawing.Size(45, 230);
             this.r_v_3.TabIndex = 20;
-            this.r_v_3.Scroll += new System.EventHandler(this.r_v_3_Scroll);
+            this.r_v_3.ValueChanged += new System.EventHandler(this.r_v_3_Scroll);
             // 
             // r_v_2
             // 
@@ -574,7 +599,7 @@
             this.r_v_2.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.r_v_2.Size = new System.Drawing.Size(45, 230);
             this.r_v_2.TabIndex = 19;
-            this.r_v_2.Scroll += new System.EventHandler(this.r_v_2_Scroll);
+            this.r_v_2.ValueChanged += new System.EventHandler(this.r_v_2_Scroll);
             // 
             // r_v_1
             // 
@@ -584,7 +609,7 @@
             this.r_v_1.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.r_v_1.Size = new System.Drawing.Size(45, 230);
             this.r_v_1.TabIndex = 18;
-            this.r_v_1.Scroll += new System.EventHandler(this.r_v_1_Scroll);
+            this.r_v_1.ValueChanged += new System.EventHandler(this.r_v_1_Scroll);
             // 
             // comboRightMode
             // 
@@ -620,13 +645,6 @@
             this.trackBar3.Size = new System.Drawing.Size(268, 45);
             this.trackBar3.TabIndex = 18;
             this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(613, 56);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(42, 20);
-            this.numericUpDown1.TabIndex = 16;
             // 
             // Form1
             // 
@@ -666,6 +684,13 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.l_n_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.l_v_7)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.l_v_6)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.l_v_5)).EndInit();
@@ -675,6 +700,13 @@
             ((System.ComponentModel.ISupportInitialize) (this.l_v_1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.r_n_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_7)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_6)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_5)).EndInit();
@@ -683,7 +715,6 @@
             ((System.ComponentModel.ISupportInitialize) (this.r_v_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.r_v_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
@@ -695,13 +726,13 @@
         private System.Windows.Forms.ComboBox ComboIndex;
         private System.Windows.Forms.ComboBox comboLeftMode;
         private System.Windows.Forms.ComboBox comboRightMode;
-        private System.Windows.Forms.Label l_l_1;
-        private System.Windows.Forms.Label l_l_2;
-        private System.Windows.Forms.Label l_l_3;
-        private System.Windows.Forms.Label l_l_4;
-        private System.Windows.Forms.Label l_l_5;
-        private System.Windows.Forms.Label l_l_6;
-        private System.Windows.Forms.Label l_l_7;
+        private System.Windows.Forms.NumericUpDown l_n_1;
+        private System.Windows.Forms.NumericUpDown l_n_2;
+        private System.Windows.Forms.NumericUpDown l_n_3;
+        private System.Windows.Forms.NumericUpDown l_n_4;
+        private System.Windows.Forms.NumericUpDown l_n_5;
+        private System.Windows.Forms.NumericUpDown l_n_6;
+        private System.Windows.Forms.NumericUpDown l_n_7;
         private System.Windows.Forms.TrackBar l_v_1;
         private System.Windows.Forms.TrackBar l_v_2;
         private System.Windows.Forms.TrackBar l_v_3;
@@ -718,15 +749,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelPlayerNumber;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label r_l_1;
-        private System.Windows.Forms.Label r_l_2;
-        private System.Windows.Forms.Label r_l_3;
-        private System.Windows.Forms.Label r_l_4;
-        private System.Windows.Forms.Label r_l_5;
-        private System.Windows.Forms.Label r_l_6;
-        private System.Windows.Forms.Label r_l_7;
+        private System.Windows.Forms.NumericUpDown r_n_1;
+        private System.Windows.Forms.NumericUpDown r_n_2;
+        private System.Windows.Forms.NumericUpDown r_n_3;
+        private System.Windows.Forms.NumericUpDown r_n_4;
+        private System.Windows.Forms.NumericUpDown r_n_5;
+        private System.Windows.Forms.NumericUpDown r_n_6;
+        private System.Windows.Forms.NumericUpDown r_n_7;
         private System.Windows.Forms.TrackBar r_v_1;
         private System.Windows.Forms.TrackBar r_v_2;
         private System.Windows.Forms.TrackBar r_v_3;

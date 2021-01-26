@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="0.10.0" />
+        <PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
+        <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+        <PackageReference Include="RestSharp" Version="106.11.8-alpha.0.12" />
+    </ItemGroup>
+    <ItemGroup>
+      <AvaloniaResource Include="Style.xaml" />
+      <None Remove="SideBar.xaml" />
+      <AvaloniaResource Include="SideBar.xaml" />
+      <None Remove="Content\imagen-ds5.png" />
+      <AvaloniaResource Include="Content\imagen-ds5.png" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Pages\About.xaml" />
+    </ItemGroup>
+</Project>

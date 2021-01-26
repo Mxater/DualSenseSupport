@@ -1,0 +1,70 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DSApp.MainWindow"
+        Title="DSApp">
+  <Grid>
+    <Grid.Styles>
+      <Style Selector="TextBlock.h2">
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="MaxWidth" Value="400"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+      </Style>
+    </Grid.Styles>
+    <TabControl Classes="sidebar" Name="Sidebar">
+      <TabItem Header="LayoutTransformControl">
+        o
+      </TabItem>
+      <TabItem Header="ListBox">
+        n
+      </TabItem>
+      <TabItem Header="Menu">
+        m
+      </TabItem>
+      <TabItem Header="Notifications">
+        l
+      </TabItem>
+      <TabItem Header="NumericUpDown">
+        k
+      </TabItem>
+      <TabItem Header="Pointers (Touch)">
+        j
+      </TabItem>
+      <TabItem Header="ProgressBar">
+        i
+      </TabItem>
+      <TabItem Header="RadioButton">
+        h
+      </TabItem>
+      <TabItem Header="Slider">
+        g
+      </TabItem>
+      <TabItem Header="TabControl">
+        f
+      </TabItem>
+      <TabItem Header="TabStrip">
+        e
+      </TabItem>
+      <TabItem Header="TextBox">
+        d
+      </TabItem>
+      <TabItem Header="ToolTip">
+        c
+      </TabItem>
+      <TabItem Header="TreeView">
+        b
+      </TabItem>
+      <TabItem Header="Viewbox">
+        a
+      </TabItem>
+      <TabControl.Tag>
+        <ComboBox x:Name="Themes" SelectedIndex="0" Width="100" Margin="8" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+          <ComboBoxItem>Light</ComboBoxItem>
+          <ComboBoxItem>Dark</ComboBoxItem>
+        </ComboBox>
+      </TabControl.Tag>
+    </TabControl>
+  </Grid>
+</Window>
