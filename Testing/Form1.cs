@@ -78,6 +78,19 @@ namespace Testing
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool AllocConsole();
 
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == 0x84)
+            {
+                base.WndProc(ref m);
+                if ((int)m.Result == 0x1)
+                    m.Result = (IntPtr)0x2;
+                return;
+            }
+
+            base.WndProc(ref m);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             var result = colorDialog1.ShowDialog();
@@ -448,6 +461,21 @@ namespace Testing
         {
             if (onChangeTrigger) return;
             r_v_7.Value =(int) r_n_7.Value;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
