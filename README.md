@@ -2,7 +2,12 @@
 # DualSenseSupport
 Preliminar support for DualSense Haptic
 
+## Old Theme
 ![Tester interface](https://i.imgur.com/hp0sGZO.png)
+
+## New Theme
+![image](https://user-images.githubusercontent.com/37187657/163538982-55ae3980-9c90-47ca-8a2f-13408e360777.png)
+
 
 This has a DLL to integrate with Games.
 Only works with USB in this moment.
